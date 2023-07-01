@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity03</title>
+    </head>
+    <body>
+        <p id="test">Value of the key: </p>
+        <p id="test1">Number of elements: </p>
+        
+        <script>
+            const person = new Map();
+
+            person.set("apple",5);
+            person.set("banana",3);
+            person.set("orange",2);
+            
+            document.getElementById("test").innerHTML += person.get("banana");
+            document.getElementById("test1").innerHTML += person.size;
+        </script>    
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity03</title>
+    </head>
+    <body>
+        <p id="test"></p>
+        <p id="test1"></p>
+        <script>
+            const person = new Map([
+                ["Name","John"],
+                ["Age",30],
+                ["City","Colombo"]
+            ]);
+
+            let text = "";
+            for (const x of person.entries()){
+                text += x + "<br>";
+            }
+            document.getElementById("test").innerHTML = text;
+        
+
+            person.delete("Age");
+            let text1 = "";
+            for (const y of person.entries()){
+                text1 += y + "<br>";
+            }
+            document.getElementById("test1").innerHTML = text1;
+            
+        </script>    
+    </body>
+</html>

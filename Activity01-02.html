@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity01</title>
+    </head>
+    <body>
+        <script>
+            function lower(s1){
+                return s1.toLowerCase();
+            }
+            var string1 = lower("ProgrammoPhobia");
+            document.write("a) "+string1+"<br>");
+        
+            function upper(s2){
+                return s2.toUpperCase();
+            }
+            var string2 = upper("ProgrammoPhobia");
+            document.write("b) "+string2+"<br>");
+
+            function splitString(s3){
+                return s3.split(',');
+                
+            }
+            var string3 = splitString("Programmo,Phobia");
+            document.write("c) "+string3+"<br>");
+
+            function indexPosition(s4){
+                return s4.indexOf("Phobia");
+                
+            }
+            var position = indexPosition("ProgrammoPhobia");
+            document.write("d) "+position+"<br>");
+        </script>
+    </body>
+</html>

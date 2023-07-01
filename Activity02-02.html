@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity02</title>
+    </head>
+    <body>
+        <label>Enter a Number: </label><br>
+        <input type="number" id="value"><br><br>
+        <input type="submit" name="submit" onclick="typedefine()">
+
+        <p id="test"></p>
+
+        <script>
+            function typedefine(){
+                let number = +document.getElementById("value").value;
+                document.write(typeof number);
+
+            }
+        </script>
+    </body>
+</html>

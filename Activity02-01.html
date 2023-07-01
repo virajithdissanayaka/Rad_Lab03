@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity02</title>
+    </head>
+    <body>
+        <label>Enter the Number(1>=true, 0=false ): </label><br>
+        <input type="number" id="value1"><br>
+        <label>Enter the Number(1>=true, 0=false ): </label><br>
+        <input type="number" id="value2"><br><br>
+        <input type="submit" name="submit" onclick="bool()">
+        <p id="demo"></p>
+        <script>
+            function bool(){
+                let n1 = +document.getElementById("value1").value;
+                let n2 = +document.getElementById("value2").value;
+                let re1 = Boolean(n1);
+                let re2 = Boolean(n2);
+                if(re1==true && re2==true){
+                    document.write("True");
+                }
+                else{
+                    document.write("False");
+                }
+            }
+        </script>
+    </body>
+</html>
